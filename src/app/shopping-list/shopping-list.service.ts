@@ -20,7 +20,15 @@ export class ShoppingListService {
       addIngredient (ingredient : Ingredient){
         this.ingredients.push(ingredient);
         this.IngredientsChanged.emit(this.ingredients.slice());
-        
         console.log("Added new Ingredient " +ingredient.name);
+      }
+
+
+      addIngredients(ingredients: Ingredient[]) {
+        // for (let ingredient of ingredients) {
+        //   this.addIngredient(ingredient);
+        // }
+        this.ingredients.push(...ingredients);
+        this.IngredientsChanged.emit(this.ingredients.slice());
       }
 }
