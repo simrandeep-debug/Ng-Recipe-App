@@ -11,19 +11,21 @@ export class ShoppingListComponent implements OnInit {
 
   ingredients : Ingredient[];
 
-  // ingredients : Ingredient[] = [
-  //   new Ingredient('chat masala ', 5),
-  //   new Ingredient('sambhar masala ', 10),
-  //   new Ingredient('chane ka masala ', 3),
-  //   new Ingredient('pav bhaji masala ', 2),
-
-  // ];
+  
 
   constructor( private shoppingListService : ShoppingListService) { 
   }
 
   ngOnInit(): void {
     this.ingredients = this.shoppingListService.getIngredients();
+    this.shoppingListService.IngredientsChanged.
+    subscribe((ingredients:Ingredient[]) => {
+      this.ingredients = ingredients;
+    }
+      
+    )
+
+
   }
 
   
