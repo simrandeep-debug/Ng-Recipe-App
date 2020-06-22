@@ -32,8 +32,8 @@ export class RecipeService {
     
         new Recipe(' KFC Chicken Dips ', 
         ' Recipe for KFC Chicken Dips ', 
-        'https://www.mcdonalds.com/is/image/content/dam/usa/nfl/nutrition/items/hero/desktop/t-mcdonalds-Fries-Small-Medium.jpg?$Product_Desktop$',
-        [
+        'https://i.ytimg.com/vi/q7Idojp5ZY8/maxresdefault.jpg',
+         [
             new Ingredient('Chicken', 100),
             new Ingredient('Spices', 4),
             new Ingredient('Sauce', 3)
