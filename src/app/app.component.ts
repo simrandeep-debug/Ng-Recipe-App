@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Ng-Recipe-App';
+  title = 'RecipeApp';
 
   //loadedFeature = 'recipe'
   
